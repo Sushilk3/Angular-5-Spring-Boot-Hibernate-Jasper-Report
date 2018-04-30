@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.1.final using JasperReports Library version 6.2.1  -->
+<!-- 2018-01-16T16:49:30 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report_Param" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4b23a119-00af-4e63-adf8-12c665cc0837">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="age" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="name" class="java.lang.String"/>
+	<field name="age" class="java.lang.Integer"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="urbanVillage" class="java.lang.String"/>
+	<field name="subDistrict" class="java.lang.String"/>
+	<field name="district" class="java.lang.String"/>
+	<field name="province" class="java.lang.String"/>
+	<field name="postCode" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="11426837-e014-4b87-bd67-363bbc17a3bd"/>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="19" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="20" height="19" backcolor="#F55653" uuid="70d8412b-b16c-444c-86e5-ecefc7ffd2a9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ed47ab21-68d4-47f5-9a1f-0ed376f7b7c7"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[cvId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="20" y="0" width="80" height="19" backcolor="#F55653" uuid="f8346341-149c-47b1-bb92-9b8218a8938f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="582482e9-6353-4126-a69f-a80516174a69"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="0" width="160" height="19" backcolor="#F55653" uuid="eb129041-cedb-44eb-94d3-d4242ba6c659">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5332f6c-322a-4a22-9300-caad66549eb5"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="0" width="70" height="19" backcolor="#F55653" uuid="78664220-e5d0-461f-9745-b8ea506ee21a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ac6cb4e-3371-4ff5-afd8-fb9cc19eb369"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Urban
+Village]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="350" y="0" width="50" height="19" backcolor="#F55653" uuid="0a287ff0-795c-439a-9db2-4fe1ad094f27">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d77da0af-c4cc-4136-a564-a11e90276767"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sub
+District]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="400" y="0" width="60" height="19" backcolor="#F55653" uuid="0ce5bb1c-9e83-4459-9c31-975ce08b2f67">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e65bfe39-94a9-4cbc-b143-027b5fb9903e"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[District]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="460" y="0" width="60" height="19" backcolor="#F55653" uuid="afd7599e-7907-49e0-85c7-4d25de894a8b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eac99b21-4159-4e0f-823f-b192e2f09e2a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Province]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="520" y="0" width="35" height="19" backcolor="#F55653" uuid="0591daa3-44c1-4d80-b206-bdeea7047de6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="41396535-627b-465e-ad5f-c130a15c8e1c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Post
+Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="0" width="20" height="19" backcolor="#F55653" uuid="494faea3-0a8a-4879-bcd0-c775430b39a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5332f6c-322a-4a22-9300-caad66549eb5"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="0" width="80" height="12" uuid="7d03279a-9c5c-4bc9-a6d4-97a2ed4e2658"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="0" width="20" height="12" uuid="db365a13-8c86-4404-a98f-50612de52894"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="160" height="12" uuid="80a49d84-47a8-4803-b240-eb87cec8daad"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="70" height="12" uuid="87cf239c-1ec7-4209-a127-01e4c4819d20"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{urbanVillage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="50" height="12" uuid="618fea83-1821-46bd-9b2b-666162139848"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{subDistrict}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="60" height="12" uuid="1f25c45e-4dfa-44f8-b8a3-40deff90e517"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{district}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="60" height="12" uuid="01d6161f-05c8-4c29-ac7e-b90a836fbf0d"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{province}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="0" width="35" height="12" uuid="5bb4b650-1cb3-411a-a7b9-9a0aaf75c1fc"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="20" height="12" uuid="dce8ae38-d163-4c52-92b5-ca118b49b397"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

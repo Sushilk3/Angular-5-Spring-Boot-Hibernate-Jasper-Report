@@ -1,0 +1,12 @@
+<div class="container-fluid" style="margin-top: 30px">
+  <h3>Data List Curriculum Vitae</h3>
+</div>
+
+<div style="margin-top: 30px">
+  <ul *ngFor="let main of dataList">
+    <li>
+        cvId = {{main.cvId}}, Name = {{main.name}}, Username = {{main.userName}}, Age = {{main.age}}, Address = {{main.address}}, UrbanVillage = {{main.urbanVillage}} <br>
+        SubDistrict   = {{main.subDistrict}}, Province = {{main.province}}, PostCode = {{main.postCode}}, Email = {{main.email}}
+    </li>
+  </ul>
+</div>

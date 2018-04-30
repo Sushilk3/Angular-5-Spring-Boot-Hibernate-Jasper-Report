@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.1.final using JasperReports Library version 6.2.1  -->
+<!-- 2018-02-02T13:06:02 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report_Curriculum_Vitea_Post_Param" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="55877ca5-9345-4378-aec8-42954de0bef1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="PostParam"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8070/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="jasperadmin"/>
+	<property name="ireport.jasperserver.report.resource" value="/reports/Lawencon/Report_Curriculum_Vitea_Post_Param_files/main_jrxml"/>
+	<property name="ireport.jasperserver.reportUnit" value="/reports/Lawencon/Report_Curriculum_Vitea_Post_Param"/>
+	<parameter name="age" class="java.lang.Integer"/>
+	<parameter name="token" class="java.lang.String"/>
+	<queryString language="WebServiceQuery">
+		<![CDATA[{
+  "fieldsMap" : {
+    "cvId" : "cvId",
+    "name" : "name",
+    "age" : "age",
+    "address" : "address",
+    "urbanVillage" : "urbanVillage",
+    "subDistrict" : "subDistrict",
+    "district" : "district",
+    "province" : "province",
+    "postCode" : "postCode"
+  },
+  "getparameters" : { },
+  "fields" : [ {
+    "name" : "cvId",
+    "expression" : "cvId"
+  }, {
+    "name" : "name",
+    "expression" : "name"
+  }, {
+    "name" : "age",
+    "expression" : "age"
+  }, {
+    "name" : "address",
+    "expression" : "address"
+  }, {
+    "name" : "urbanVillage",
+    "expression" : "urbanVillage"
+  }, {
+    "name" : "subDistrict",
+    "expression" : "subDistrict"
+  }, {
+    "name" : "district",
+    "expression" : "district"
+  }, {
+    "name" : "province",
+    "expression" : "province"
+  }, {
+    "name" : "postCode",
+    "expression" : "postCode"
+  } ],
+  "options" : {
+    "contentType" : "application/json",
+    "rootPath" : "",
+    "baseUrl" : ""
+  },
+  "headersMap" : {
+    "token" : "$P{token}"
+  },
+  "queryData" : "{\r\n  \"age\" :$P{age}\r\n}",
+  "GETParameters" : { }
+}]]>
+	</queryString>
+	<field name="cvId" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="urbanVillage" class="java.lang.String"/>
+	<field name="subDistrict" class="java.lang.String"/>
+	<field name="district" class="java.lang.String"/>
+	<field name="province" class="java.lang.String"/>
+	<field name="postCode" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="78" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="0" width="258" height="30" backcolor="#BDACAC" uuid="8bff5fac-a089-40b2-beab-beac3c3df305"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CURRICULUM VITAE]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="30" y="50" width="40" height="19" backcolor="#E66C6A" uuid="42f16dd2-f4c6-4978-947e-68e64a36aba4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="50" width="30" height="19" backcolor="#E66C6A" uuid="d676c6d2-a1ec-430b-89da-b9148c2e2470">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f66b2906-d581-4647-a952-490b60886482"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age : ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="19" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="20" height="19" backcolor="#F55653" uuid="0d4cc3b3-6d36-43c1-9c1b-8fc53159de59">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ed47ab21-68d4-47f5-9a1f-0ed376f7b7c7"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[cvId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="20" y="0" width="80" height="19" backcolor="#F55653" uuid="6938708d-873a-441f-bdae-8430959d54b3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="582482e9-6353-4126-a69f-a80516174a69"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="0" width="20" height="19" backcolor="#F55653" uuid="68d7bce5-bbf8-4389-9ca7-f2c8e204482e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f66b2906-d581-4647-a952-490b60886482"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="120" y="0" width="160" height="19" backcolor="#F55653" uuid="2d32952e-be5d-49f2-97fa-3d84e797b538">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5332f6c-322a-4a22-9300-caad66549eb5"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="0" width="70" height="19" backcolor="#F55653" uuid="c1d95a1a-c598-4292-9476-17b7cd0bbcc8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ac6cb4e-3371-4ff5-afd8-fb9cc19eb369"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Urban
+Village]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="350" y="0" width="50" height="19" backcolor="#F55653" uuid="cbaa4840-b59f-4c4f-a6da-9168c73a25b7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d77da0af-c4cc-4136-a564-a11e90276767"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sub
+District]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="400" y="0" width="60" height="19" backcolor="#F55653" uuid="1390ccf0-6392-4f56-8893-66df0a4f996f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e65bfe39-94a9-4cbc-b143-027b5fb9903e"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[District]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="460" y="0" width="60" height="19" backcolor="#F55653" uuid="bd94d39f-5ea4-4ea7-9e47-6f4439e986aa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eac99b21-4159-4e0f-823f-b192e2f09e2a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Province]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="520" y="0" width="35" height="19" backcolor="#F55653" uuid="3557b579-6171-4faf-94fd-26e3a366aa89">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="41396535-627b-465e-ad5f-c130a15c8e1c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Colonna MT" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Post
+Code]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="20" height="19" uuid="867405e6-5e79-4552-a25d-52601855d06b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="0" width="80" height="19" uuid="07d94042-a4b1-4936-bb26-c8af765c4cad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="20" height="19" uuid="3e0ec2fe-3681-4a3a-9d0e-f0f2d6d907d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="160" height="19" uuid="6e67da8c-0f26-491b-8103-c0f443403b88"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="70" height="19" uuid="d0382916-11a4-409b-bc1b-0500ad6cfa82"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{urbanVillage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="50" height="19" uuid="a2fb48dd-6012-4286-a3fc-788e6e14d0f0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{subDistrict}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="60" height="19" uuid="8650a3b9-a9fb-4bfe-9c91-f75e3755bd7f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{district}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="60" height="19" uuid="dcd363c0-1865-4c22-83bb-31797bd1fd6e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{province}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="0" width="35" height="19" uuid="3a2fb14f-7d64-41df-a1d3-0a405a6d733c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postCode}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

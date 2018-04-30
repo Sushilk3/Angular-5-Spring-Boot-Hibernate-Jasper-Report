@@ -1,0 +1,74 @@
+<div class="container-fluid" style="margin-top: 30px">
+ <h3>Genenarte Report</h3>
+</div>
+<div class="container-fluid">
+  <label>get Report List : </label>
+  <a  type="button"
+      href="http://localhost:8070/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=%2Freports%2FLawencon&reportUnit=%2Freports%2FLawencon%2FReport_Curriculum_Vitea_List&standAlone=true&decorate=no&j_username=jasperadmin&j_password=jasperadmin"
+      target="_blank"
+      class="btn btn-info"
+      style="margin-left: 50px">
+      Click Report List
+  </a>
+  <br>
+  <label>=====================================================================================================================================================</label>
+  <br>
+  <label>get Report Param : </label>
+  <input type="text" style="margin-left: 28px" [value]="age" name="age" [(ngModel)]="age">
+  <br>
+  <a  type="button"
+      href="http://localhost:8070/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=%2Freports%2FLawencon&reportUnit=%2Freports%2FLawencon%2FReport_Curriculum_Vitea_Age_Param&standAlone=true&decorate=no&age={{age}}&j_username=jasperadmin&j_password=jasperadmin"
+      target="_blank"
+      class="btn btn-info"
+      style="margin-left: 163px">
+      Click Report Param
+  </a>
+  <br>
+  <label>=====================================================================================================================================================</label>
+  <br>
+  <label>get Report Grouping : </label>
+  <a  type="button"
+  href="http://localhost:8070/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=%2Freports%2FLawencon&reportUnit=%2Freports%2FLawencon%2FReport_Curriculum_Vitea_Grouping&standAlone=true&decorate=no&j_username=jasperadmin&j_password=jasperadmin"
+  target="_blank"
+  class="btn btn-info"
+  style="margin-left: 4px">
+  Click Report Grouping
+</a>
+<br>
+<label>=====================================================================================================================================================</label>
+<br>
+  <label>post Report Param : </label>
+  <input type="text" style="margin-left: 20px" [value]="ages" name="ages" [(ngModel)]="ages">
+  <br>
+  <input type="text" style="margin-left: 163px" [value]="token" name="token" [(ngModel)]="token">
+  <a  type="button"
+      href="http://localhost:8070/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=%2Freports%2FLawencon&reportUnit=%2Freports%2FLawencon%2FReport_Curriculum_Vitea_Post_Param&standAlone=true&decorate=no&age={{ages}}&token={{token}}&j_username=jasperadmin&j_password=jasperadmin"
+      target="_blank"
+      class="btn btn-info">
+      Click Report Param
+  </a>
+  <br>
+  <label>=====================================================================================================================================================</label>
+  <br>
+  <label>post Report Grouping : </label>
+  <a  type="button"
+  href="http://localhost:8070/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=%2Freports%2FLawencon&reportUnit=%2Freports%2FLawencon%2FReport_Curriculum_Vitea_Grouping1&standAlone=true&decorate=no&j_username=jasperadmin&j_password=jasperadmin"
+  target="_blank"
+  class="btn btn-info"
+  style="margin-left: 4px">
+  Click Report Grouping
+</a>
+<br>
+<label>=====================================================================================================================================================</label>
+<br>
+  <label>post Report Grouping Iframe : </label><br>
+  <button onclick="document.getElementById('report').src='http://localhost:8070/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=%2Freports%2FLawencon&reportUnit=%2Freports%2FLawencon%2FReport_Curriculum_Vitea_Grouping1&standAlone=true&decorate=no&j_username=jasperadmin&j_password=jasperadmin'">
+    Report
+  </button><br><br>
+
+  <iframe id="report" name="report"
+          style="height: 550px; width: 100%">
+  </iframe>
+<br>
+<label>=====================================================================================================================================================</label>
+</div>
